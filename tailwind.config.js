@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "boost-desktop": "url(src/images/bg-boost-desktop.svg)",
-        "boost-mobile": "url(src/images/bg-boost-mobile.svg)",
-        "shorten-desktop": "url(src/images/bg-shorten-desktop.svg)",
-        "shorten-mobile": "url(src/images/bg-shorten-mobile.svg)",
+        "boost-desktop": "url(/images/bg-boost-desktop.svg)",
+        "boost-mobile": "url(/images/bg-boost-mobile.svg)",
+        "shorten-desktop": "url(/images/bg-shorten-desktop.svg)",
+        "shorten-mobile": "url(/images/bg-shorten-mobile.svg)",
       },
       colors: {
         "my-cyan": "hsl(180, 66%, 49%)",
