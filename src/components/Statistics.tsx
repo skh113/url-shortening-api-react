@@ -3,10 +3,10 @@ import StatisticItem from "./StatisticItem";
 const Statistics = () => {
   return (
     <div className=" flex flex-col items-center text-center py-16 bg-my-gray ">
-      <h2 className="font-bold text-4xl text-my-dark-violet">
+      <h2 className="font-bold text-4xl text-my-dark-violet mb-4">
         Advanced Statistics
       </h2>
-      <p className="text-my-grayish-violet my-4">
+      <p className="text-my-grayish-violet mb-16">
         Track how your links are performing across the web with our advanced
         statistics dashboard.
       </p>
@@ -19,6 +19,7 @@ const Statistics = () => {
             mean a thing. Branded links help
             instil confidence in your content."
           imageSrc="/images/icon-brand-recognition.svg"
+          cyanBar
         />
 
         <StatisticItem
@@ -28,6 +29,7 @@ const Statistics = () => {
             people engage with your content
             helps inform better decisions."
           imageSrc="/images/icon-detailed-records.svg"
+          cyanBar
         />
 
         <StatisticItem
