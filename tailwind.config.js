@@ -13,10 +13,10 @@ export default {
         "my-cyan": "hsl(180, 66%, 49%)",
         "my-dark-violet": "hsl(257, 27%, 26%)",
         "my-red": "hsl(0, 87%, 67%)",
-        "my-gray": "hsl(0, 0%, 75%)",
         "my-grayish-violet": "hsl(257, 7%, 63%)",
         "my-very-dark-blue": "hsl(255, 11%, 22%)",
         "my-very-dark-violet": "hsl(260, 8%, 14%)",
+        "my-gray": "hsl(230, 25%, 95%)",
       },
       screens: {
         mobile: "375px",
