@@ -2,6 +2,7 @@ import BoostAD from "./components/BoostAD";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import LinkShortener from "./components/LinkShortener";
 import Statistics from "./components/Statistics";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Header />
       <Hero />
+      <LinkShortener />
       <Statistics />
       <BoostAD title="Boost your links today" />
       <Footer />

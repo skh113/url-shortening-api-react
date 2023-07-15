@@ -21,6 +21,9 @@ export default {
       screens: {
         mobile: "375px",
       },
+      lineHeight: {
+        16: "4rem",
+      },
     },
   },
   plugins: [],
