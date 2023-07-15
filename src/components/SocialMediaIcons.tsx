@@ -4,22 +4,22 @@ const SocialMediaIcons = () => {
       <img
         src="/images/icon-facebook.svg"
         alt="instagram"
-        className="min-w-10"
+        className="cursor-pointer"
       />
       <img
         src="/images/icon-twitter.svg"
         alt="instagram"
-        className="min-w-10"
+        className="cursor-pointer"
       />
       <img
         src="/images/icon-pinterest.svg"
         alt="instagram"
-        className="min-w-10"
+        className="cursor-pointer"
       />
       <img
         src="/images/icon-instagram.svg"
         alt="instagram"
-        className="in-w-10"
+        className="cursor-pointer"
       />
     </div>
   );
