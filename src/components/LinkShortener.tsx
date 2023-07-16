@@ -1,12 +1,16 @@
 import axios, { AxiosResponse, CanceledError } from "axios";
 import Button from "./Button";
 import { useState } from "react";
+import LinkItems from "./LinkItems";
 
 interface Response {
   ok: boolean;
   result: {
     code: string;
     original_link: string;
+    full_short_link: string;
+    full_short_link2: string;
+    full_short_link3: string;
     share_link: string;
     short_link: string;
     short_link2: string;
@@ -25,9 +29,9 @@ const LinkShortener = () => {
       .get("https://api.shrtco.de/v2/shorten?url=" + url)
       .then(({ data }: AxiosResponse<Response>) => {
         setData([
-          data.result.short_link,
-          data.result.short_link2,
-          data.result.short_link3,
+          data.result.full_short_link,
+          data.result.full_short_link2,
+          data.result.full_short_link3,
         ]);
       })
       .catch((err) => {
@@ -52,7 +56,7 @@ const LinkShortener = () => {
         >
           Shorten It!
         </Button>
-        {/* {data.length !== 0 ? <div>{data}</div> : <div>nothing</div>} */}
+        <LinkItems links={data} />
       </div>
     </div>
   );
