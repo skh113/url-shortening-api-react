@@ -18,24 +18,22 @@ const Header = () => {
         />
       </div>
       <div className="flex flex-row items-center justify-between w-full mobile:hidden lg:flex">
+        <div className="mx-4">
+          <Button className="text-my-grayish-violet bg-white px-0 mx-4">
+            Features
+          </Button>
+          <Button className="text-my-grayish-violet bg-white px-0 mx-4">
+            Resources
+          </Button>
+          <Button className="text-my-grayish-violet bg-white px-0 mx-4">
+            Company
+          </Button>
+        </div>
         <div className="">
-          <div className="mx-4">
-            <Button className="text-my-grayish-violet bg-white px-0 mx-4">
-              Features
-            </Button>
-            <Button className="text-my-grayish-violet bg-white px-0 mx-4">
-              Resources
-            </Button>
-            <Button className="text-my-grayish-violet bg-white px-0 mx-4">
-              Company
-            </Button>
-          </div>
-          <div className="">
-            <Button className="text-my-grayish-violet bg-white px-0 mx-4">
-              Login
-            </Button>
-            <Button>Sign Up</Button>
-          </div>
+          <Button className="text-my-grayish-violet bg-white px-0 mx-4">
+            Login
+          </Button>
+          <Button>Sign Up</Button>
         </div>
       </div>
     </nav>
