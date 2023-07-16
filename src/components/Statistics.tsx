@@ -19,7 +19,6 @@ const Statistics = () => {
             mean a thing. Branded links help
             instil confidence in your content."
           imageSrc="/images/icon-brand-recognition.svg"
-          cyanBar
         />
 
         <StatisticItem
@@ -29,7 +28,6 @@ const Statistics = () => {
             people engage with your content
             helps inform better decisions."
           imageSrc="/images/icon-detailed-records.svg"
-          cyanBar
         />
 
         <StatisticItem

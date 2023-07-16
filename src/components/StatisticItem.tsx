@@ -2,10 +2,10 @@ interface Props {
   title: string;
   imageSrc: string;
   description: string;
-  cyanBar?: boolean;
+  // cyanBar?: boolean;
 }
 
-const StatisticItem = ({ title, imageSrc, description, cyanBar }: Props) => {
+const StatisticItem = ({ title, imageSrc, description }: Props) => {
   return (
     <>
       {/* TODO: make the cyanBar */}
