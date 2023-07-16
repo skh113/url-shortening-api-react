@@ -2,6 +2,7 @@ import axios, { AxiosResponse, CanceledError } from "axios";
 import Button from "./Button";
 import { useState } from "react";
 import LinkItems from "./LinkItems";
+import LoadingSpinner from "./LoadingSpinner";
 
 interface Response {
   ok: boolean;
@@ -21,9 +22,11 @@ interface Response {
 const LinkShortener = () => {
   const [data, setData] = useState<any>([]);
   const [inputValue, setInputValue] = useState("");
+  const [isLoading, setLoading] = useState(false);
 
   const handleClick = () => {
     const url = inputValue;
+    setLoading(true);
 
     axios
       .get("https://api.shrtco.de/v2/shorten?url=" + url)
@@ -33,11 +36,19 @@ const LinkShortener = () => {
           data.result.full_short_link2,
           data.result.full_short_link3,
         ]);
+        setLoading(false);
       })
       .catch((err) => {
         if (err instanceof CanceledError) return;
         console.log(err.message);
+        setLoading(false);
       });
+  };
+
+  const handleKeyDown = (event: any) => {
+    if (event.key === "Enter") {
+      handleClick();
+    }
   };
 
   return (
@@ -50,6 +61,7 @@ const LinkShortener = () => {
             className="border-none active:border-none mobile:w-11/12 md:w-4/5 rounded-lg h-10 mobile:mb-4 md:mb-0 py-3 text-center md:mr-4"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
           <Button
             className="mobile:w-11/12 md:w-auto rounded-lg"
@@ -58,6 +70,7 @@ const LinkShortener = () => {
             Shorten It!
           </Button>
         </div>
+        {isLoading && <LoadingSpinner />}
         <LinkItems links={data} />
       </div>
     </div>
