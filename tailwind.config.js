@@ -19,7 +19,7 @@ export default {
         "my-gray": "hsl(230, 25%, 95%)",
       },
       screens: {
-        mobile: "375px",
+        mobile: "280px",
       },
       lineHeight: {
         16: "4rem",
